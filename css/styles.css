@@ -131,19 +131,6 @@ a {
   line-height: 1.5;
 }
 
-.bio strong {
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-.bio strong:hover {
-  background-color: #fff;
-  color: #000;
-}
-
 .bio a {
   font-weight: 700;
   text-decoration: underline;
