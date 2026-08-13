@@ -83,6 +83,14 @@ a {
   letter-spacing: -0.5px;
   text-decoration: none;
   white-space: nowrap;
+  padding: 0 0.1em;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.say-hello:hover,
+.say-hello:focus-visible {
+  background-color: #fff;
+  color: #000;
 }
 
 /* ---- Intro ---- */
@@ -133,6 +141,13 @@ a {
   font-weight: 700;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.bio a:hover,
+.bio a:focus-visible {
+  background-color: #fff;
+  color: #000;
 }
 
 @media (min-width: 900px) {
