@@ -65,7 +65,7 @@ a {
 .wordmark {
   font-family: 'Big Shoulders', sans-serif;
   font-weight: 600;
-  font-size: clamp(2.5rem, 6vw, 7.5rem);
+  font-size: clamp(2.5rem, 6vw, 5.625rem);
   line-height: 0.85;
   white-space: nowrap;
 }
@@ -73,7 +73,7 @@ a {
 .say-hello {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 700;
-  font-size: clamp(2.5rem, 6vw, 7.5rem);
+  font-size: clamp(2.5rem, 6vw, 5.625rem);
   line-height: 0.85;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -169,7 +169,7 @@ a {
 .section-header h2 {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 700;
-  font-size: clamp(2.5rem, 6vw, 7.5rem);
+  font-size: clamp(2.5rem, 6vw, 5.625rem);
   line-height: 0.85;
   white-space: nowrap;
 }
@@ -177,7 +177,7 @@ a {
 .section-header .year {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 700;
-  font-size: clamp(2.5rem, 6vw, 7.5rem);
+  font-size: clamp(2.5rem, 6vw, 5.625rem);
   line-height: 0.85;
 }
 
