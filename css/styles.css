@@ -49,13 +49,23 @@ a {
 
 /* ---- Header ---- */
 .site-header {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: var(--gap);
   padding-top: 30px;
   padding-bottom: 16px;
-  border-bottom: 4px solid #fff;
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 0;
+  height: 4px;
+  background: #fff;
 }
 
 .wordmark {
@@ -91,10 +101,28 @@ a {
   padding-bottom: 60px;
 }
 
+.intro .photo {
+  position: relative;
+}
+
 .intro .photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.photo-color {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+@media (hover: hover) {
+  .intro .photo:hover .photo-color,
+  .intro .photo:focus-within .photo-color {
+    opacity: 1;
+  }
 }
 
 .bio {
@@ -150,12 +178,22 @@ a {
 
 /* ---- Section header ---- */
 .section-header {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: var(--gap);
   padding-bottom: 16px;
-  border-bottom: 4px solid #fff;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 0;
+  height: 4px;
+  background: #fff;
 }
 
 .section-header h2 {
