@@ -135,6 +135,12 @@ a {
   font-weight: 700;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.bio strong:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .bio a {
