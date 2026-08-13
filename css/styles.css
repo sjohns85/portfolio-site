@@ -102,10 +102,6 @@ a {
   line-height: 1.5;
 }
 
-.bio p + p {
-  margin-top: 1.5em;
-}
-
 .bio strong {
   font-weight: 700;
   text-decoration: underline;
@@ -149,17 +145,6 @@ a {
     column-count: 2;
     column-gap: var(--gap);
     column-fill: balance;
-  }
-
-  /* Use trailing margin instead of leading margin so paragraph
-     spacing never gets stuck at the top of a new column */
-  .bio-columns p {
-    margin-top: 0;
-    margin-bottom: 1.5em;
-  }
-
-  .bio-columns p:last-child {
-    margin-bottom: 0;
   }
 }
 
