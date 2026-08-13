@@ -211,7 +211,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: clamp(1rem, 3vw, 3rem);
+  padding: clamp(1rem, 3vw, 60px);
   opacity: 0;
   overflow-y: auto;
   transition: opacity 0.3s ease;
@@ -221,7 +221,7 @@ a {
 .overlay h3 {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 4vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 5.625rem);
   line-height: 0.85;
   margin-bottom: 0.5em;
   flex-shrink: 0;
