@@ -140,12 +140,6 @@ a {
   font-weight: 700;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  transition: color 0.2s ease;
-}
-
-.bio a:hover,
-.bio a:focus-visible {
-  color: var(--accent);
 }
 
 @media (min-width: 900px) {
