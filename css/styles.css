@@ -53,7 +53,7 @@ a {
   align-items: baseline;
   justify-content: space-between;
   gap: var(--gap);
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 16px;
 }
 
@@ -145,6 +145,10 @@ a {
 }
 
 @media (min-width: 900px) {
+  .site-header {
+    padding-top: 70px;
+  }
+
   .intro {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
