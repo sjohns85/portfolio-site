@@ -68,8 +68,8 @@ a {
 }
 
 .wordmark {
-  font-family: 'Big Shoulders', sans-serif;
-  font-weight: 600;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
   font-size: clamp(2.5rem, 6vw, 5.625rem);
   line-height: 0.85;
   white-space: nowrap;
@@ -167,6 +167,7 @@ a {
 
   .bio-columns {
     column-width: 320px;
+    column-count: 2;
     column-gap: var(--gap);
     column-fill: balance;
   }
