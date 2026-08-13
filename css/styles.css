@@ -130,15 +130,6 @@ a {
   line-height: 1.5;
 }
 
-.bio-columns p {
-  text-indent: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-.bio-columns p:last-child {
-  margin-bottom: 0;
-}
-
 .bio strong {
   font-weight: 700;
   text-decoration: underline;
