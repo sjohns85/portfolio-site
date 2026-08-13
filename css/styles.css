@@ -191,6 +191,7 @@ a {
 }
 
 .tile {
+  position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #4d4d4d;
@@ -200,13 +201,44 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.tile:hover img,
-.tile:focus-within img {
-  transform: scale(1.04);
+/* Hover overlay — only the large feature tiles have this */
+.overlay {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1rem, 3vw, 3rem);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
+
+.overlay h3 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 6rem);
+  line-height: 0.85;
+  margin-bottom: 0.5em;
+}
+
+.overlay p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.6875rem, 1vw, 1.375rem);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+.overlay-detect { background: rgba(255, 200, 4, 0.9); color: #000; }
+.overlay-identifeye { background: rgba(135, 74, 246, 0.9); color: #fff; }
+.overlay-lifewallet { background: rgba(0, 135, 184, 0.9); color: #fff; }
+.overlay-pano { background: rgba(207, 89, 0, 0.9); color: #fff; }
 
 @media (min-width: 900px) {
   .gallery {
@@ -216,5 +248,12 @@ a {
   .tile-big {
     grid-column: span 2;
     grid-row: span 2;
+  }
+}
+
+@media (min-width: 900px) and (hover: hover) {
+  .tile-big:hover .overlay,
+  .tile-big:focus-within .overlay {
+    opacity: 1;
   }
 }
