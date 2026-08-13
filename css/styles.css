@@ -166,7 +166,7 @@ a {
   }
 
   .bio-columns {
-    column-count: 3;
+    column-width: 320px;
     column-gap: var(--gap);
     column-fill: balance;
   }
