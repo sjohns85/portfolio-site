@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scottjohns.me/sitemap.xml
