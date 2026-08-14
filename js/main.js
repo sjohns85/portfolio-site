@@ -26,7 +26,12 @@ if (!prefersReducedMotion) {
 }
 
 // Tap-to-toggle overlay on large project tiles (for touch devices without hover)
+// On mobile, start with the text overlay showing; tap reveals the image, tap again goes back.
+const isMobile = window.matchMedia('(max-width: 899px)').matches;
+
 document.querySelectorAll('.tile-big').forEach((tile) => {
+  if (isMobile) tile.classList.add('tap-active');
+
   tile.addEventListener('click', () => {
     tile.classList.toggle('tap-active');
   });
