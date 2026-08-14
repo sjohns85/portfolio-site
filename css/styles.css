@@ -313,8 +313,7 @@ a {
 
   /* ---- Scroll-reveal (gallery tiles + section header) ---- */
   .section-header.reveal-up,
-  .tile.reveal-left,
-  .tile.reveal-right {
+  .tile.reveal {
     opacity: 0;
     transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -323,24 +322,17 @@ a {
     transform: translateY(20px);
   }
 
-  .tile.reveal-left {
-    transform: translateX(-48px);
+  .tile.reveal {
+    transform: scale(0.97);
   }
 
-  .tile.reveal-right {
-    transform: translateX(48px);
-  }
-
-  .section-header.in-view,
-  .tile.in-view {
+  .section-header.in-view {
     opacity: 1;
     transform: translate(0, 0);
   }
 
-  @media (max-width: 899px) {
-    .tile.reveal-left,
-    .tile.reveal-right {
-      transform: translateY(24px);
-    }
+  .tile.in-view {
+    opacity: 1;
+    transform: scale(1);
   }
 }

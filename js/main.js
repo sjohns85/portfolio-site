@@ -3,9 +3,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 if (!prefersReducedMotion) {
   const tiles = document.querySelectorAll('.gallery .tile');
 
-  tiles.forEach((tile, i) => {
-    tile.classList.add(i % 2 === 0 ? 'reveal-left' : 'reveal-right');
-  });
+  tiles.forEach((tile) => tile.classList.add('reveal'));
 
   const sectionHeader = document.querySelector('.section-header');
   if (sectionHeader) sectionHeader.classList.add('reveal-up');
