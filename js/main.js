@@ -24,3 +24,10 @@ if (!prefersReducedMotion) {
 
   revealTargets.forEach((el) => el && observer.observe(el));
 }
+
+// Tap-to-toggle overlay on large project tiles (for touch devices without hover)
+document.querySelectorAll('.tile-big').forEach((tile) => {
+  tile.addEventListener('click', () => {
+    tile.classList.toggle('tap-active');
+  });
+});
